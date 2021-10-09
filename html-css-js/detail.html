@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/style-detail.css">
+    <title>aespa 에스파 'Next Level' MV</title>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm">
+
+            <div class="container-fluid mx-2">
+                <div class="nav-left flex-center">
+                    <div class="icon-bars" onclick="collapse()">
+                        <span class="iconify" data-icon="clarity:bars-line" data-height="24"></span>
+                    </div>
+                    <div class="nav-overlay" onclick="collapse()"></div>
+                    <div class="nav-collapse">
+                        <div class="flex-left ps-4 mb-3">
+                            <div class="icon-bars" onclick="collapse()">
+                                <span class="iconify" data-icon="clarity:bars-line" data-height="24"></span>
+                            </div>
+                            <a class="navbar-brand ms-5" href="https://www.youtube.com/"><img src="./img/logo.png" alt="logo"></a>
+                        </div>
+                        <ul class="nav-collapse-list ps-4">
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="bytesize:home" data-height="20"></span>Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="carbon:explore" data-height="20"></span>Explore</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-subscriptions" data-height="20"></span>Subsciptions</a>
+                            </li>
+                        </ul>
+                        <div class="dropdown-divider me-3"></div>
+                        <ul class="nav-collapse-list ps-4">
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-video-library" data-height="24"></span>Library</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="grommet-icons:history" data-height="24"></span>History</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="fluent:video-clip-20-regular" data-height="24"></span></span>Your videos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="navbar-brand mx-3" href="https://www.youtube.com/"><img src="./img/logo.png" alt="logo"></a>
+                </div>
+                <div class="nav-center flex-center" style="display: inline-flex;">
+                    <form class="input-search" action="#">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="submit" class="btn btn-light tooltip-item">
+                                <span class="iconify" data-icon="ei:search" data-height="24"></span>
+                                <span class="tooltiptext">Search</span>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="micro-icon tooltip-item">
+                        <i class="fas fa-microphone"></i>
+                        <span class="tooltiptext" style="left: -50px">Search with your voice</span>
+                    </div>
+                </div>
+                <ul class="navbar-nav flex-center">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle tooltip-item" href="#" id="addVideoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="iconify" data-icon="carbon:video-add" data-height="23"></span>
+                            <span class="tooltiptext">Create</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="addVideoDropdown">
+                            <a class="dropdown-item" href="#">Upload video</a>
+                            <a class="dropdown-item" href="#">Go live</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle tooltip-item" href="#" id="iconDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="iconify" data-icon="healthicons:ui-menu-grid-outline" data-height="22"></span>
+                            <span class="tooltiptext">Youtube apps</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="iconDropdown" style="right: 0;">
+                            <a class="dropdown-item" href="#">YouTube TV</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">YouTube Music</a>
+                            <a class="dropdown-item" href="#">YouTube Kids</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Creator Academy</a>
+                            <a class="dropdown-item" href="#">YouTube for Artists</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle tooltip-item" href="#" id="iconDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="iconify" data-icon="clarity:bell-line" data-height="22"></span>
+                            <span class="tooltiptext">Notification</span>
+                        </a>
+                        <div class="dropdown-menu notify py-0" aria-labelledby="iconDropdown" style="right: 0;">
+                            <div class="notify-header ps-3 py-3" style="width: 30em;">
+                                <p>Notification<span class="iconify float-end" data-icon="ant-design:setting-outlined" data-height="24"></span></p>
+                            </div>
+                            <div class="dropdown-divider my-0"></div>
+                            <a class="dropdown-item py-3" href="#">
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 px-0">
+                                        <img class="channel-icon" src="./img/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 ps-0" style="white-space: normal;">
+                                        <p>aespa 에스파〖Savage〗Hallucination Quest | Ningning & Winter Teaser</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <img class="img-video" src="https://i.ytimg.com/vi/kZlLTnE1y1Q/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDECogqPhqC9IvOFxQvG1tzciQGRg" alt="">
+                                    </div>
+                                    <div class="col-lg-1 col-sm-1">
+                                        <span class="iconify" data-icon="heroicons-outline:dots-vertical" data-height="20"></span>
+
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="dropdown-item py-3" href="#">
+                                <div class="row">
+                                    <div class="col-lg-2 col-sm-2 px-0">
+                                        <img class="channel-icon" src="./img/avatar.jpg" alt="">
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6 ps-0" style="white-space: normal;">
+                                        <p>aespa 에스파〖Savage〗Hallucination Quest | Ningning & Winter Teaser</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-3">
+                                        <img class="img-video" src="https://i.ytimg.com/vi/kZlLTnE1y1Q/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDECogqPhqC9IvOFxQvG1tzciQGRg" alt="">
+                                    </div>
+                                    <div class="col-lg-1 col-sm-1">
+                                        <span class="iconify" data-icon="heroicons-outline:dots-vertical" data-height="20"></span>
+
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link dropdown-toggle" href="#" id="iconDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="avatar-icon"><img src="./img/avatar.jpg" alt=""></span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="iconDropdown" style="right: 0;">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="avatar-icon mx-3"><img src="./img/avatar.jpg" alt="" style="width: 2.8em; height: 2.8em"></div>
+                                </div>
+                                <div class="col-9">
+                                    <h6>linh pham</h6>
+                                    <a href="https://myaccount.google.com/u/0/?utm_source=YouTubeWeb&tab=rk&utm_medium=act&tab=rk&hl=en">Manage yout Google Account</a>
+                                </div>
+                            </div>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><span class="iconify" data-icon="ph:user-square-thin" data-height="24"></span>Your Channel</a>
+                            <a class="dropdown-item" href="#"><span class="iconify" data-icon="dashicons:money-alt" data-height="24"></span>Purchases and memberships</a>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <div class="container-body">
+        <div class="row my-4">
+            <div class="col-lg-8">
+                <iframe width="100%" height="500px" src="https://www.youtube.com/embed/4TWR90KJl84" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <div class="title">
+                    <span><a href="#">#aespa</a> <a href="#">#Nextlevel</a></span>
+                    <h5>aespa 에스파 'Next Level' MV</h5>
+                    <div class="flex-between">
+                        <div class="video-detail">161,751,577 views &middot; May 17, 2021</div>
+                        <div class="flex-between">
+                            <li><span class="iconify" data-icon="bx:bxs-like" data-height="20"></span>2.8M</li>
+                            <li><span class="iconify" data-icon="bx:bx-dislike" data-height="20"></span>111k</li>
+                            <li><span class="iconify" data-icon="icon-park-outline:share-two" data-height="20"></span>SHARE</li>
+                            <li><span class="iconify" data-icon="ic:baseline-playlist-add" data-height="20"></span>SAVE</li>
+                            <li><span class="iconify" data-icon="bx:bx-dots-horizontal-rounded" data-height="20"></span></li>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="desc row">
+                    <div class="col-1 avatar-icon">
+                        <img src="https://yt3.ggpht.com/ytc/AKedOLSXEKHwjY8vsYiHiuythAqiZmKkktXucDF978zaow4=s88-c-k-c0x00ffffff-no-rj" alt="">
+                    </div>
+                    <div class="col-11">
+                        <div class="flex-between">
+                            <div class="channel">
+                                <h6>SMTOWN <span class="iconify" data-icon="mdi:checkbox-marked-circle" style="color: #555;" data-height="14"></span></h6>
+                                <span class="type-small">28.9M subscribers</span>
+                            </div>
+                            <div class="sub">
+                                <button>SUBSCRIBE</button>
+                                <!-- <span class="iconify" data-icon="clarity:bell-line" data-height="24"></span> -->
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span>
+                            aespa's new single "Next Level" is out!<br>
+                            Listen and download on your favorite platform: https://smarturl.it/aespa_NextLevel<br>
+                            ⚔️ Performance Stage #1: <a href="https://youtu.be/z58k37I4Crs">https://youtu.be/z58k37I4Crs</a><br>
+                            ⚔️ Performance Stage #2: <a href="https://youtu.be/hehFXvnWyKo">https://youtu.be/hehFXvnWyKo</a><br>
+                            ⚔️ Performance Stage #3: <a href="https://youtu.be/82CnK4M2sxo">https://youtu.be/82CnK4M2sxo</a><br>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="comment">
+                    <div>
+                        <span>449,945 Comments</span>&emsp;&emsp;
+                        <span class="iconify" data-icon="bi:filter-left" data-height="24"></span>
+                        <span style="font-weight: 450;">SORT BY</span>
+                    </div>
+                    <form action="">
+                        <div class="user-comment">
+                            <img src="./img/avatar.jpg" alt="">
+                            <input type="text" placeholder="Add a public comment...">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="btn">CANCEL</button>
+                            <button class="btn btn-light">COMMENT</button>
+                        </div>
+                    </form>
+                    <div class="row user-comment">
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <img src="./img/avatar.jpg" alt="">
+                        </div>
+                        <div class="col-lg-10 col-md-10 col-sm-10">
+                            <h4>20 Starter Blue <span class="type-small">2 days ago</span></h4>
+                            <p>Gimme gimme now is already ringing in my head non stop but that next level will forever be in my heart 😁❤️</p>
+                            <span class="iconify" data-icon="bx:bx-like" data-height="16"></span>
+                            <span class="type-small pr-2">509</span>
+                            <span class="iconify" data-icon="bx:bx-dislike" data-height="16"></span>
+                            <span class="type-small pr-4">1</span>
+                            <span class="">REPLY</span>
+                        </div>
+                        <div class="col-lg-1 col-md-1 col-sm-1">
+                            <span class="iconify" data-icon="heroicons-outline:dots-vertical" data-height="20"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="tag">
+                    <div class="tag-box active">All</div>
+                    <div class="tag-box">From your search</div>
+                </div>
+                <div class="miniVideo row style=" align-self: stretch "">
+                    <div class="col-lg-5 col-md-3 col-sm-3">
+                        <img src="https://i.ytimg.com/vi/Y6sfNV51ae0/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCant9uM_SGONdtElA2pRO8uRYoYQ" alt="" width="100px" height="60px">
+                    </div>
+                    <div class="col-lg-6 col-md-8 col-sm-8 ps-sm-3">
+                        <a href="https://www.youtube.com/watch?v=Y6sfNV51ae0">aespa performance</a>
+                        <p class="type-small">aespa <span class="iconify" data-icon="ph:music-note-thin" data-height="14"></span><br> 2.6M views &middot; 7 months ago
+                        </p>
+                    </div>
+                    <div class="col-lg-1 col-md-1 col-sm-1">
+                        <span class="iconify" data-icon="heroicons-outline:dots-vertical" data-height="20"></span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+        <script src="./js/detail.js"></script>
+</body>
+
+</html>
