@@ -24,6 +24,21 @@ a {
 
 .container-body {
     margin: 1em 7em 0em 6em;
+    padding-top: 2.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* left: 0;
+    right: 0; */
+    /* align-items: flex-start;
+    align-content: stretch; */
+    /* justify-content: space-evenly; */
+}
+
+.list-video {
+    padding-left: 1em;
+    height: 100%;
 }
 
 .navbar {
@@ -304,13 +319,20 @@ hr {
     margin-top: 1.5em;
 }
 
-.user-comment img {
+.user-icon {
     width: 2.8em;
     height: 2.8em;
     border-radius: 90%;
 }
 
-.user-comment input[type=text] {
+.reply-comment .user-icon {
+    width: 2.2em;
+    height: 2.2em;
+    border-radius: 90%;
+}
+
+
+/* .user-comment input[type=text] {
     border-top: none;
     border-left: none;
     border-right: none;
@@ -318,6 +340,21 @@ hr {
     background-color: #f9f9f9;
     width: 91%;
     margin-left: 1em;
+} */
+
+.form-comment {
+    border: 0;
+    border-bottom: 0.3px solid rgb(197, 197, 197, 0.4);
+    background-color: #f9f9f9;
+    width: 100%;
+}
+
+.comment-group button {
+    display: none;
+}
+
+.form-comment:focus~.comment-group button {
+    display: block;
 }
 
 .user-comment h4 {
@@ -355,6 +392,74 @@ hr {
     height: 3.5em;
 }
 
+.dots {
+    display: none;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.dots:hover {
+    cursor: pointer;
+}
+
+.notify-item:hover .dots {
+    display: block;
+}
+
+.miniVideo:hover .dots {
+    display: block;
+}
+
+
+/* .dots:hover {
+    display: block;
+} */
+
+
+/* .comment:hover .comment>dots {
+    display: block;
+} */
+
+.reply-comment:hover .dots {
+    display: block;
+}
+
+.comment:hover .dots {
+    display: block;
+}
+
+.user-comment p {
+    margin-bottom: 0;
+}
+
+.user-comment .btn {
+    font-weight: 500;
+    color: #606060;
+}
+
+.user-comment .btn-comment {
+    background-color: #ECECEC;
+    border-radius: 0px;
+    color: #909090;
+}
+
+@media only screen and (max-width: 1024px) {
+    .input-group {
+        width: 100%;
+    }
+    .container-body {
+        margin-left: 1.6em;
+        margin-right: 2em;
+    }
+    iframe {
+        height: 400px;
+    }
+    .list-video {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .input-group {
         width: 100%;
@@ -365,5 +470,9 @@ hr {
     }
     iframe {
         height: 400px;
+    }
+    .list-video {
+        margin-left: 0;
+        width: 100%;
     }
 }
