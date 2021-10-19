@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>YouTube</title>
+    <link rel="shortcut icon" href="https://www.pngrepo.com/png/13671/512/youtube.png" />
+    <title >YouTube</title>
 
 </head>
 
@@ -18,10 +19,9 @@
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid mx-2">
                 <div class="flex-center">
-                        <div class="icon-bars " data-toggle="collapse" data-target="#noidungcard">
+                        <button class="icon-bars " data-toggle="collapse" data-target="#noidungcard" onclick="hiddenMainLeft()">
                             <span class="iconify" data-icon="clarity:bars-line" data-height="24"></span>
-                        </div>
-
+                        </button>
                     <div>
                     <a class="navbar-brand mx-3" href="index.html"><span class="iconify" data-icon="logos:youtube" data-width="90" data-height="20"></span></a>
                     </div>
@@ -74,7 +74,7 @@
                         </a>
                         <div class="dropdown-menu notify py-0" aria-labelledby="iconDropdown" style="right: 0;">
                             <div class="notify-header ps-3 py-3" style="width: 30em;">
-                                <p>Notification<span class="iconify float-end" data-icon="ant-design:setting-outlined" data-height="24"></span></p>
+                                <p>Notification</p>
                                 <hr>
                                 <div >
                                     <span class="iconify" data-icon="clarity:bell-line" data-height="50" data-width="50"></span>
@@ -125,13 +125,31 @@
             </div>
         </nav>
     </header>
-        <div class="container-fluid main-content ">
-            <div class="d-flex flex-row">
-                <div class="sidebar d-flex flex-row">
-                    <div class="mini-sidebar">
+    <div class="d-flex flex-row">
+        <div class="sidebar d-flex flex-row">
+            <div class="mini-sidebar " id="hidden-main-left">
+                <ul class="nav-collapse-list ps-4">
+                    <li>
+                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="bytesize:home" data-height="20"></span>
+                            <br><p>Home</p> 
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="carbon:explore" data-height="20"></span><br><p>Explore</p></a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-subscriptions" data-height="20"></span><br><p>Subsciptions</a>
+                    </li>
+                    <li>
+                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-video-library" data-height="20"></span><br><p>Library</p></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <div class="collapse" data-toggle="collapse"  aria-expanded="false" id="noidungcard">
                         <ul class="nav-collapse-list ps-4">
                             <li>
-                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="bytesize:home" data-height="20"></span><br>Home</a>
+                                <a href="" class="nav-collapse-link  active"><span class="iconify" data-icon="bytesize:home" data-height="20"></span>Home</a>
                             </li>
                             <li>
                                 <a href="" class="nav-collapse-link"><span class="iconify" data-icon="carbon:explore" data-height="20"></span>Explore</a>
@@ -139,58 +157,43 @@
                             <li>
                                 <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-subscriptions" data-height="20"></span>Subsciptions</a>
                             </li>
-                            <li>
-                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-subscriptions" data-height="20"></span>Subsciptions</a>
-                            </li>
                         </ul>
-                    </div>
-                    <div class="">
-                        <div class="collapse"  data-toggle="collapse"  aria-expanded="false" id="noidungcard">
-                                <ul class="nav-collapse-list ps-4">
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="bytesize:home" data-height="20"></span>Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="carbon:explore" data-height="20"></span>Explore</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-subscriptions" data-height="20"></span>Subsciptions</a>
-                                    </li>
-                                </ul>
-                                <div class="dropdown-divider me-3"></div>
-                                <ul class="nav-collapse-list ps-4">
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-video-library" data-height="20"></span>Library</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="grommet-icons:history" data-height="20"></span>History</a>
-                                    </li>
-                                    <li>
-                                        <a href="" class="nav-collapse-link"><span class="iconify" data-icon="fluent:video-clip-20-regular" data-height="20"></span></span>Your videos</a>
-                                    </li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ri:menu-fold-fill" data-rotate="180deg" data-height="24"></span> Saved</p></a></li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:baseline-expand-more" data-height="20"></span> Show more</a></li>
-                
-                                </ul>
-                                <div class="dropdown-divider me-3"></div>
-                                <ul class="nav-collapse-list ps-4">
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="simple-icons:youtubegaming" data-height="20"></span> Gaming</a></li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="fluent:live-24-regular" data-height="20"></span> Live</a></li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="simple-icons:youtubegaming"  data-height="20"></span> Sports</a></li>
-                
-                                </ul>
-                                <div class="dropdown-divider me-3"></div>
-                                <ul class="nav-collapse-list ps-4">
-                
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ant-design:setting-outlined" data-height="20"></span> Setting</a></li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ci:flag-outline" data-height="20"></span> Report</a></li>
-                                    <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="lucide:help-circle" data-height="20"></span> Help</a></li>
-                                    <li><a href="" class="nav-collapse-link"><span  class="iconify" data-icon="ic:outline-feedback" data-height="20"></span> Send feedback</a>
-                
-                                </ul>
-                        </div>
-                    </div>
+                        <div class="dropdown-divider me-3"></div>
+                        <ul class="nav-collapse-list ps-4">
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:outline-video-library" data-height="20"></span>Library</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="grommet-icons:history" data-height="20"></span>History</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-collapse-link"><span class="iconify" data-icon="fluent:video-clip-20-regular" data-height="20"></span></span>Your videos</a>
+                            </li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ri:menu-fold-fill" data-rotate="180deg" data-height="24"></span> Saved</p></a></li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ic:baseline-expand-more" data-height="20"></span> Show more</a></li>
+        
+                        </ul>
+                        <div class="dropdown-divider me-3"></div>
+                        <ul class="nav-collapse-list ps-4">
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="simple-icons:youtubegaming" data-height="20"></span> Gaming</a></li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="fluent:live-24-regular" data-height="20"></span> Live</a></li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="simple-icons:youtubegaming"  data-height="20"></span> Sports</a></li>
+        
+                        </ul>
+                        <div class="dropdown-divider me-3"></div>
+                        <ul class="nav-collapse-list ps-4">
+        
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ant-design:setting-outlined" data-height="20"></span> Setting</a></li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="ci:flag-outline" data-height="20"></span> Report</a></li>
+                            <li><a href="" class="nav-collapse-link"><span class="iconify" data-icon="lucide:help-circle" data-height="20"></span> Help</a></li>
+                            <li><a href="" class="nav-collapse-link"><span  class="iconify" data-icon="ic:outline-feedback" data-height="20"></span> Send feedback</a>
+        
+                        </ul>
                 </div>
+            </div>
+        </div>
+        <div class="main-content ">
+            <div class="d-flex flex-row">
                 <div class="main-video">
                     <div class="genre-list ">
                         <a href="" class="genre-item"> All</a>
@@ -213,7 +216,7 @@
                         <a href="" class="genre-item"> Conan</a>
                     </div>
                     <div class="video-card row">
-                        <div class="video-item col-lg-3">
+                        <div class="video-item col-lg-3 col-md-4">
                             <a href=""><img src="https://i.ytimg.com/vi/caMhMsJp_UA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCUBIHng0ol9myByq6eLRf7XHTLuA" alt="">
                                 <div class="video-item-content d-flex flex-row">
                                     <div class="video-logo">
@@ -227,7 +230,7 @@
                                 </div>
                             </a>
                         </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="https://i.ytimg.com/vi/UrbNhtpFxYk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjU-0B22Ry28Vt4A__Uh2JYW1LAA" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -241,7 +244,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="	https://i.ytimg.com/vi/c5Coigh34D4/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBI1X03VGa9R0z_7n8fj6FOXeJY2A" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -255,7 +258,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="	https://i.ytimg.com/vi/T05CV0E13PU/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB8hjzk0ZgCuvk3JnjG89-0sNo9sgA" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -269,7 +272,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="	https://i.ytimg.com/vi/URRQ1VJrIQQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA7eQYfwlulI-x7OTgxtgPgxbBnNQ" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -283,7 +286,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="https://i.ytimg.com/vi/N_kQ_WqOykw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCGTv9epULo3M-zTVW7Y2PLfU2D9Q" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -297,7 +300,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="https://i.ytimg.com/vi/wR7pabKU-KI/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBPrTyhhp0LwLd9CG_NvbLYvBBS8A" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -311,7 +314,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="https://i.ytimg.com/vi/AaiceMWG3ng/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA0YjhsgJghFN-90ZtlZvx_7ML-XA" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -326,7 +329,7 @@
                         </a>
                     </div>
 
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-4">
                         <a href=""><img src="https://i.ytimg.com/vi/OBBxSS57V_Q/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAMeAhZgY73mv4_TR2ncg_ffHw_VQ" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -340,7 +343,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="video-item col-lg-3">
+                    <div class="video-item col-lg-3 col-md-3">
                         <a href=""><img src="https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCXItolpxDNYJ8bdpX_aYK57pXkig" alt="">
                             <div class="video-item-content d-flex flex-row">
                                 <div class="video-logo">
@@ -354,16 +357,15 @@
                             </div>
                         </a>
                     </div>
-                </div>
             </div>
-
         </div>
-        <!-- </div> -->
+            
+
         <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
-        <script src="main.js"></script>
+        <script src="/js/main.js"></script>
 </body>
 
 </html>

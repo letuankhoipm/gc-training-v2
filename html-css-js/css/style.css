@@ -23,6 +23,8 @@ a {
 }
 
 
+
+
 .container-body {
     margin: 1em 7em 0em 6em;
     padding-top: 2.5em;
@@ -68,6 +70,15 @@ a {
 
 }
 
+.nav-collapse-link p {
+    margin: 0;
+}
+.nav-collapse-link a {
+    align-items: center;
+    justify-content: center;
+}
+
+
 .navbar .container-fluid {
     margin: 0 ;
     padding: 0;
@@ -110,6 +121,11 @@ a {
     margin-left: 0.5em  ;
     cursor: pointer;
 }
+
+.flex-center button:first-child {
+    background-color: white;
+    border: none;
+} 
 
 .form-control {
     border-radius: 0.1rem;
@@ -184,6 +200,7 @@ a {
 }
 
 
+
 /* .nav-collapse-list {
     margin-top: 1.5em;
 } */
@@ -218,7 +235,14 @@ nav li .iconify {
     padding-top: 1em;
 }
 
+
+
+.notify-header P{
+    margin: 0;
+    
+}
 /********************************* Main Content *******************************/
+
 
 .genre-list {
     padding: 1em;
@@ -227,6 +251,7 @@ nav li .iconify {
     white-space: nowrap;
     border-left: none;
     position: fixed;
+
 
 }
 
@@ -252,10 +277,6 @@ nav li .iconify {
     color: #333;
 }
 
-.main-content {
-    margin-top:4.1em;
-    padding: 0;
-}
 
 .video-item img {
     width: 100%;
@@ -276,13 +297,39 @@ nav li .iconify {
 
 }
 
+.main-content {
+    margin-top:4.1em;
+    padding: 0;
+
+}
+
+
 .collapse {
     width: 15em;
     overflow: scroll;
     margin-top: 0em;
     height: 100%;
-    position:sticky;
+    margin-top: 3em;
+    position:relative;
 }
+
+.collapse a.active{
+    background-color: rgb(206, 206, 206) !important;
+    font-weight: bold;
+}
+
+.collapse a {
+    padding-left: 1.8em;
+
+}
+
+
+.collapse li .iconify {
+    margin-right: 1em;
+    margin-bottom: 0.3em;
+}
+
+
 
 .video-card a {
     color: rgb(0, 0, 0);
@@ -302,31 +349,36 @@ nav li .iconify {
 }
 
 .mini-sidebar {
-    display: none;
     background-color: rgb(255, 255, 255);
-    width: 5em;
-    margin-bottom: 0;
-    position: fixed;
-    height: 100em;
-    overflow: hidden;
+    width: 5.5em;
+    height:100%;
+    z-index: 0;
+    align-items: center;
+    display:block;
     margin-top: 3em;
+    position: relative  ;
 }
 
-
-.expand-sidebar  {
-    display: block;
-    margin-left: 0px;
-    height: 100%;
-    width: 15em ;
-  
-}
 
 .mini-sidebar li  {
-    width: 5.2em;
+
     background-color: #fff;
     font-size: x-small !important;
-    padding:  0em 5em 2.5em 0;
+    padding: 2em 1em 2em 1em ;
 }
+
+ul.nav-collapse-list.ps-4{
+    margin-right: 0 !important;
+    padding-left: 0em!important;
+}
+
+
+
+.mini-sidebar a.nav-collapse-link{
+    text-align: center;
+    padding-left: 0;
+}
+
 
 .nav-collapse-list li:hover {
     background-color: rgb(241, 240, 240);
@@ -338,7 +390,7 @@ nav li .iconify {
 }
 
 .nav-collapse-link .iconify {
-    margin-right: 1.5em;
+    margin-right: 0.2em;
 }
 
 .notify-header  {
