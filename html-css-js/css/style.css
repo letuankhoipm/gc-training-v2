@@ -251,7 +251,7 @@ nav li .iconify {
     white-space: nowrap;
     border-left: none;
     position: fixed;
-
+    margin-left: 5.5em;
 
 }
 
@@ -293,7 +293,7 @@ nav li .iconify {
 }
 
 .video-card {
-    margin: 5em 1em 1em 1em;
+    margin: 5em 1em 1em 5.5em;
 
 }
 
@@ -310,7 +310,7 @@ nav li .iconify {
     margin-top: 0em;
     height: 100%;
     margin-top: 3em;
-    position:relative;
+    position:fixed;
 }
 
 .collapse a.active{
@@ -356,7 +356,7 @@ nav li .iconify {
     align-items: center;
     display:block;
     margin-top: 3em;
-    position: relative  ;
+    position: fixed  ;
 }
 
 
