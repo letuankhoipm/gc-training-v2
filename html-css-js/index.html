@@ -19,7 +19,7 @@
         <nav class="navbar navbar-expand-sm">
             <div class="container-fluid mx-2">
                 <div class="flex-center">
-                        <button class="icon-bars " data-toggle="collapse" data-target="#noidungcard" onclick="hiddenMainLeft()">
+                        <button class="icon-bars " data-toggle="collapse" data-target="#noidungcard" onclick="hiddenMainLeft(), marginMainLeft(), marginMainLeftVideo()">
                             <span class="iconify" data-icon="clarity:bars-line" data-height="24"></span>
                         </button>
                     <div>
@@ -195,7 +195,7 @@
         <div class="main-content ">
             <div class="d-flex flex-row">
                 <div class="main-video">
-                    <div class="genre-list ">
+                    <div class="genre-list " id="margin-main-left">
                         <a href="" class="genre-item"> All</a>
                         <a href="" class="genre-item"> Bài Tarot</a>
                         <a href="" class="genre-item"> Game</a>
@@ -215,7 +215,7 @@
                         <a href="" class="genre-item"> Conan</a>
                         <a href="" class="genre-item"> Conan</a>
                     </div>
-                    <div class="video-card row">
+                    <div class="video-card row" id="margin-main-left-video">
                         <div class="video-item col-lg-3 col-md-4">
                             <a href=""><img src="https://i.ytimg.com/vi/caMhMsJp_UA/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCUBIHng0ol9myByq6eLRf7XHTLuA" alt="">
                                 <div class="video-item-content d-flex flex-row">
@@ -230,136 +230,136 @@
                                 </div>
                             </a>
                         </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="https://i.ytimg.com/vi/UrbNhtpFxYk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjU-0B22Ry28Vt4A__Uh2JYW1LAA" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/3e3dbhNjzGkQqM1470E3ChkT_O5a3t2wF4h8EX8HQWi2G6CFNcEe1lvEr2IANoTPXC9ksLKZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="https://i.ytimg.com/vi/UrbNhtpFxYk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDjU-0B22Ry28Vt4A__Uh2JYW1LAA" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/3e3dbhNjzGkQqM1470E3ChkT_O5a3t2wF4h8EX8HQWi2G6CFNcEe1lvEr2IANoTPXC9ksLKZ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Học tập và khám phá sâu hơn tri thức nhân loại</h6>
+                                        <a href="">Every Frame A Painting</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                                <div class="video-title ">
-                                    <h6>Học tập và khám phá sâu hơn tri thức nhân loại</h6>
-                                    <a href="">Every Frame A Painting</a>
-                                    <p href="">47k views - 2 năm trước</p>
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="	https://i.ytimg.com/vi/c5Coigh34D4/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBI1X03VGa9R0z_7n8fj6FOXeJY2A" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLSPcAMtqWj_wBYhsaog6dnPXlvvRAYXyKRU3wYW=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Cung cấp các bài học cơ bản về nghệ thuật</h6>
+                                        <a href="">Extra Credits</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="	https://i.ytimg.com/vi/c5Coigh34D4/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBI1X03VGa9R0z_7n8fj6FOXeJY2A" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSPcAMtqWj_wBYhsaog6dnPXlvvRAYXyKRU3wYW=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="	https://i.ytimg.com/vi/T05CV0E13PU/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB8hjzk0ZgCuvk3JnjG89-0sNo9sgA" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLT6jOEJSPv1vWRPYP32T6wEkaMBJ8F72VZfCTJx=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>ASAP Science</h6>
+                                        <a href="">Laura in the Kitchen</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                                <div class="video-title ">
-                                    <h6>Cung cấp các bài học cơ bản về nghệ thuật</h6>
-                                    <a href="">Extra Credits</a>
-                                    <p href="">47k views - 2 năm trước</p>
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="	https://i.ytimg.com/vi/URRQ1VJrIQQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA7eQYfwlulI-x7OTgxtgPgxbBnNQ" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLR3lX9QLThXg6wc9ScYSFqBPCczQGPSg7_vw4vs=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6> Những góc nhìn sâu sắc và mới lạ </h6>
+                                        <a href="">MinutePhysics</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="	https://i.ytimg.com/vi/T05CV0E13PU/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLB8hjzk0ZgCuvk3JnjG89-0sNo9sgA" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLT6jOEJSPv1vWRPYP32T6wEkaMBJ8F72VZfCTJx=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="https://i.ytimg.com/vi/N_kQ_WqOykw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCGTv9epULo3M-zTVW7Y2PLfU2D9Q" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLT2f0m4cjACXYVFcQlCyhTkWTOqNEEGQks9YaTrCA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Mẹo vặt hay có thể tập làm vào những ngày cuối tuần</h6>
+                                        <a href="">Growing Your Greens</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                                <div class="video-title ">
-                                    <h6>ASAP Science</h6>
-                                    <a href="">Laura in the Kitchen</a>
-                                    <p href="">47k views - 2 năm trước</p>
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="https://i.ytimg.com/vi/wR7pabKU-KI/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBPrTyhhp0LwLd9CG_NvbLYvBBS8A" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQ4sKDacJ6qn4VA4N6DcROBAUdVroDuHn5h88mrPg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>KẾT HỢP 2 LÁ - The Fool & Strength</h6>
+                                        <a href="">Yoga with Adriene</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="	https://i.ytimg.com/vi/URRQ1VJrIQQ/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA7eQYfwlulI-x7OTgxtgPgxbBnNQ" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLR3lX9QLThXg6wc9ScYSFqBPCczQGPSg7_vw4vs=s68-c-k-c0x00ffffff-no-rj" alt="">
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="https://i.ytimg.com/vi/AaiceMWG3ng/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA0YjhsgJghFN-90ZtlZvx_7ML-XA" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLRLwdWX77PfslmgtJH8wtSXHdOcq3RBDjjCD3m-kw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Sự tiến hóa, không gian vũ trụ </h6>
+                                        <a href="">You Deserve A Drink</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                                <div class="video-title ">
-                                    <h6> Những góc nhìn sâu sắc và mới lạ </h6>
-                                    <a href="">MinutePhysics</a>
-                                    <p href="">47k views - 2 năm trước</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="https://i.ytimg.com/vi/N_kQ_WqOykw/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCGTv9epULo3M-zTVW7Y2PLfU2D9Q" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLT2f0m4cjACXYVFcQlCyhTkWTOqNEEGQks9YaTrCA=s68-c-k-c0x00ffffff-no-rj" alt="">
-                                </div>
-                                <div class="video-title ">
-                                    <h6>Mẹo vặt hay có thể tập làm vào những ngày cuối tuần</h6>
-                                    <a href="">Growing Your Greens</a>
-                                    <p href="">47k views - 2 năm trước</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="https://i.ytimg.com/vi/wR7pabKU-KI/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLBPrTyhhp0LwLd9CG_NvbLYvBBS8A" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLQ4sKDacJ6qn4VA4N6DcROBAUdVroDuHn5h88mrPg=s68-c-k-c0x00ffffff-no-rj" alt="">
-                                </div>
-                                <div class="video-title ">
-                                    <h6>KẾT HỢP 2 LÁ - The Fool & Strength</h6>
-                                    <a href="">Yoga with Adriene</a>
-                                    <p href="">47k views - 2 năm trước</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="https://i.ytimg.com/vi/AaiceMWG3ng/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLA0YjhsgJghFN-90ZtlZvx_7ML-XA" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLRLwdWX77PfslmgtJH8wtSXHdOcq3RBDjjCD3m-kw=s68-c-k-c0x00ffffff-no-rj" alt="">
-                                </div>
-                                <div class="video-title ">
-                                    <h6>Sự tiến hóa, không gian vũ trụ </h6>
-                                    <a href="">You Deserve A Drink</a>
-                                    <p href="">47k views - 2 năm trước</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                            </a>
+                        </div>
 
-                    <div class="video-item col-lg-3 col-md-4">
-                        <a href=""><img src="https://i.ytimg.com/vi/OBBxSS57V_Q/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAMeAhZgY73mv4_TR2ncg_ffHw_VQ" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLQO6tXWPchIttF4K2Ca0TrtUQR0MlkcurPI7qXtYw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                        <div class="video-item col-lg-3 col-md-4">
+                            <a href=""><img src="https://i.ytimg.com/vi/OBBxSS57V_Q/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLAMeAhZgY73mv4_TR2ncg_ffHw_VQ" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLQO6tXWPchIttF4K2Ca0TrtUQR0MlkcurPI7qXtYw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Học cách làm ảo thuật rất đơn giản</h6>
+                                        <a href="">Woodworking with Steve Ramsey</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                                <div class="video-title ">
-                                    <h6>Học cách làm ảo thuật rất đơn giản</h6>
-                                    <a href="">Woodworking with Steve Ramsey</a>
-                                    <p href="">47k views - 2 năm trước</p>
+                            </a>
+                        </div>
+                        <div class="video-item col-lg-3 col-md-3">
+                            <a href=""><img src="https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCXItolpxDNYJ8bdpX_aYK57pXkig" alt="">
+                                <div class="video-item-content d-flex flex-row">
+                                    <div class="video-logo">
+                                        <img src="https://yt3.ggpht.com/ytc/AKedOLTtJvQ1Vfew91vemeLaLdhjOwGx3tTBLlreK_QUyA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    </div>
+                                    <div class="video-title ">
+                                        <h6>Học cách pha chế cocktail</h6>
+                                        <a href="">The King of Random</a>
+                                        <p href="">47k views - 2 năm trước</p>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="video-item col-lg-3 col-md-3">
-                        <a href=""><img src="https://i.ytimg.com/vi/mU6anWqZJcc/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCXItolpxDNYJ8bdpX_aYK57pXkig" alt="">
-                            <div class="video-item-content d-flex flex-row">
-                                <div class="video-logo">
-                                    <img src="https://yt3.ggpht.com/ytc/AKedOLTtJvQ1Vfew91vemeLaLdhjOwGx3tTBLlreK_QUyA=s68-c-k-c0x00ffffff-no-rj" alt="">
-                                </div>
-                                <div class="video-title ">
-                                    <h6>Học cách pha chế cocktail</h6>
-                                    <a href="">The King of Random</a>
-                                    <p href="">47k views - 2 năm trước</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-            </div>
+                            </a>
+                        </div>
+                </div>
         </div>
-            
+            </div>
 
         <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
