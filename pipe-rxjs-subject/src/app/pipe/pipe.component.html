@@ -1,0 +1,42 @@
+<div class="container">
+    <h2 class="text-center">Pipe</h2>
+    <p>{{currentDate}}</p>
+    <p>{{currentDate | date}}</p>
+    <p>{{currentDate | date:'short'}}</p>
+    <p>{{currentDate | date:'shortDate'}}</p>
+    <p>{{currentDate | date:'medium'}}</p>
+    <p>{{currentDate | date:'mediumDate'}}</p>
+    <p>{{currentDate | date:'fullDate' | lowercase}}</p>
+    <p>{{currentDate | date:'dd-MM-yyyy'}}</p>
+
+    <p>{{'Angular' | lowercase}}</p>
+    <p>{{'Angular' | uppercase}}</p>
+
+    <p>{{0.5 | percent}}</p>
+    <p>{{1.12 | percent:'6.6'}}</p>
+    <p>{{1.12 | percent:'1.3-5'}}</p>
+
+    <p>{{250 | currency}}</p>
+    <p>{{25000 | currency: 'VND'}}</p>
+
+    <p>{{65652.323166565 | number}}</p>
+    <p>{{65652.323166565 | number: '1.1-2'}}</p>
+
+    <p>{{user | json}}</p>
+
+    <p>{{intervals | async}}</p>
+
+    <p>{{addr | formatAddress}}</p>
+    Full user list
+    <ul>
+        <li *ngFor="let user of users">{{user.name}} - {{user.age}}</li>
+    </ul>
+
+    Adult user list
+    <ul>
+        <li *ngFor="let user of users | adult">{{user.name}} - {{user.age}}</li>
+    </ul>
+
+    <button (click)="addUser()">Them user</button>
+
+</div>
